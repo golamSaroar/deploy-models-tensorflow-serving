@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Cat vs Dog Classifier</h1>
+    <hr>
+    <h3>Upload Image (Only JPG and PNG Format)</h3>
+    <form method="post" enctype="multipart/form-data" class="form-inline">
+        <div class="form-group">
+            <input type="file" name="file" class="btn btn-default">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Upload", class="btn btn-default">
+        </div>
+    </form>
+</div>
+{% endblock %}
